@@ -8,7 +8,7 @@ while True:
         print("Quit: 'q' or 'quit'")
         select = input("Enter 'rock','paper' or 'scissors': ").lower()
         computer = rnd.choice(['rock','paper','scissors'])
-        if select == ('rock' or 'paper' or 'scissors' or 'q' or 'quit'):
+        if select in ('rock','paper','scissors','q','quit'):
             print(f"Computer's choice: {computer}")
             if select == 'q' or select == 'quit':
                 break
